@@ -1,13 +1,11 @@
-package com.example.dowloadfile.Utils;
+package com.example.groupProject_downloadManager.Utils;
 
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +16,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.dowloadfile.Model.DownloadModel;
-import com.example.dowloadfile.R;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
+import com.example.groupProject_downloadManager.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-
-import java.io.File;
-import java.util.List;
 
 public class UpdateTitle extends BottomSheetDialogFragment {
     public interface OnTitleUpdateListener {

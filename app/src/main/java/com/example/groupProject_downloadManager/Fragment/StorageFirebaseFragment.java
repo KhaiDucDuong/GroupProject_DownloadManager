@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Fragment;
+package com.example.groupProject_downloadManager.Fragment;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,9 +14,9 @@ import androidx.fragment.app.Fragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-import com.example.dowloadfile.Adapter.GridViewAdapter;
-import com.example.dowloadfile.Model.DownloadModel;
-import com.example.dowloadfile.R;
+import com.example.groupProject_downloadManager.Adapter.GridViewAdapter;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
+import com.example.groupProject_downloadManager.R;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.ListResult;
 import com.google.firebase.storage.StorageReference;

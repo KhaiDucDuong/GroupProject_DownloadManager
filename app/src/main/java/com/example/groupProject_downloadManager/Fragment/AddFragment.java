@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Fragment;
+package com.example.groupProject_downloadManager.Fragment;
 
 import android.Manifest;
 import android.app.DownloadManager;
@@ -39,13 +39,13 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dowloadfile.Adapter.DownloadAdapter;
-import com.example.dowloadfile.Model.DownloadModel;
-import com.example.dowloadfile.R;
-import com.example.dowloadfile.Utils.DownloadDBHelper;
-import com.example.dowloadfile.Utils.ItemClickListener;
-import com.example.dowloadfile.Utils.PathUtil;
-import com.example.dowloadfile.Utils.RecyclerViewTouchHelper;
+import com.example.groupProject_downloadManager.Adapter.DownloadAdapter;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
+import com.example.groupProject_downloadManager.R;
+import com.example.groupProject_downloadManager.Utils.DownloadDBHelper;
+import com.example.groupProject_downloadManager.Utils.ItemClickListener;
+import com.example.groupProject_downloadManager.Utils.PathUtil;
+import com.example.groupProject_downloadManager.Utils.RecyclerViewTouchHelper;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabLayout;

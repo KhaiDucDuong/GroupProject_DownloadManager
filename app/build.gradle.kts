@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.dowloadfile"
+    namespace = "com.example.groupProject_downloadManager"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.dowloadfile"
+        applicationId = "com.example.groupProject_downloadManager"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

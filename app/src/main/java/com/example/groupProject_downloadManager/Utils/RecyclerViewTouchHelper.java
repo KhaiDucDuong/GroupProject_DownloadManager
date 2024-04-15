@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Utils;
+package com.example.groupProject_downloadManager.Utils;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,8 +10,8 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dowloadfile.Adapter.DownloadAdapter;
-import com.example.dowloadfile.R;
+import com.example.groupProject_downloadManager.Adapter.DownloadAdapter;
+import com.example.groupProject_downloadManager.R;
 
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
 

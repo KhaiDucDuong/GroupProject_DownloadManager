@@ -1,4 +1,4 @@
-package com.example.dowloadfile;
+package com.example.groupProject_downloadManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -7,7 +7,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.dowloadfile.Adapter.ViewPagerAdapter;
+import com.example.groupProject_downloadManager.Adapter.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {

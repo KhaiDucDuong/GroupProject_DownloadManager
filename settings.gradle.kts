@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DowloadFile"
+rootProject.name = "GroupProject_DownloadManager"
 include(":app")

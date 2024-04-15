@@ -1,4 +1,4 @@
-package com.example.dowloadfile;
+package com.example.groupProject_downloadManager;
 
 import android.content.Context;
 

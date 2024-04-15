@@ -55,7 +55,7 @@
         </activity>
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.dowloadfile"
+            android:authorities="com.example.groupProject_downloadManager"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

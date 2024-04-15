@@ -1,7 +1,7 @@
-package com.example.dowloadfile.Adapter;
+package com.example.groupProject_downloadManager.Adapter;
 
-import com.example.dowloadfile.R;
-import com.example.dowloadfile.Model.DownloadModel;
+import com.example.groupProject_downloadManager.R;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Adapter;
+package com.example.groupProject_downloadManager.Adapter;
 
 import android.content.Context;
 
@@ -7,8 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.dowloadfile.Fragment.AddFragment;
-import com.example.dowloadfile.Fragment.StorageFirebaseFragment;
+import com.example.groupProject_downloadManager.Fragment.AddFragment;
+import com.example.groupProject_downloadManager.Fragment.StorageFirebaseFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private Context context;

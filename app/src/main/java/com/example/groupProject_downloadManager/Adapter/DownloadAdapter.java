@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Adapter;
+package com.example.groupProject_downloadManager.Adapter;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -18,11 +18,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dowloadfile.Model.DownloadModel;
-import com.example.dowloadfile.R;
-import com.example.dowloadfile.Utils.DownloadDBHelper;
-import com.example.dowloadfile.Utils.ItemClickListener;
-import com.example.dowloadfile.Utils.UpdateTitle;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
+import com.example.groupProject_downloadManager.R;
+import com.example.groupProject_downloadManager.Utils.DownloadDBHelper;
+import com.example.groupProject_downloadManager.Utils.ItemClickListener;
+import com.example.groupProject_downloadManager.Utils.UpdateTitle;
 
 import java.io.File;
 import java.util.List;

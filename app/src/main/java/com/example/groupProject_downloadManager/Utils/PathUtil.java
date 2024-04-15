@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Utils;
+package com.example.groupProject_downloadManager.Utils;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;

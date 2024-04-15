@@ -1,4 +1,4 @@
-package com.example.dowloadfile.Utils;
+package com.example.groupProject_downloadManager.Utils;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.example.dowloadfile.Model.DownloadModel;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
 
 import java.util.ArrayList;
 import java.util.List;

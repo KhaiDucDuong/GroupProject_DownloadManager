@@ -1,6 +1,6 @@
-package com.example.dowloadfile.Utils;
+package com.example.groupProject_downloadManager.Utils;
 
-import com.example.dowloadfile.Model.DownloadModel;
+import com.example.groupProject_downloadManager.Model.DownloadModel;
 
 public interface ItemClickListener {
     void onCLickItem(String file_path);
