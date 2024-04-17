@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DowloadFile</string>
     <string name="header_tab">Header</string>
-    <string name="title">Advanced Download Manager</string>
+    <string name="title">Download Manager Application</string>
     <string name="next_update">This operation will be updated soon!</string>
     <string name="paste">PASTE</string>
     <string name="editor">Editor</string>
@@ -12,7 +12,7 @@
     <string name="hintUpdateTitle">Rename title</string>
     <string-array name="tab_titles">
         <item>Exit</item>
-        <item>Add</item>
+        <item>Download Manager</item>
         <item>Firebase retrieve</item>
     </string-array>
 </resources>
