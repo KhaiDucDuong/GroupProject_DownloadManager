@@ -184,7 +184,7 @@ public class AddFragment extends Fragment implements AdapterView.OnItemClickList
 
     /// Outside onViewCreated
     private void uploadToFirebase(Uri uri){
-        final StorageReference imageReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(Uri.parse(file_path)));
+        final StorageReference imageReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
 
         imageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
