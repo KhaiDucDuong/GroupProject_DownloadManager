@@ -43,6 +43,7 @@
             android:id="@+id/edtLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_weight="1"
             android:hint="@string/hintLink"/>
 
@@ -80,6 +81,7 @@
             android:id="@+id/edtFileName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_weight="1"
             android:hint="@string/hintFileName"/>
     </LinearLayout>
