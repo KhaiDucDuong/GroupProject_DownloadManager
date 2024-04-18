@@ -76,8 +76,6 @@ public class AddFragment extends Fragment implements AdapterView.OnItemClickList
     Button add_download_list;
     RecyclerView data_list;
     DownloadAdapter downloadAdapter;
-    final private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Upload Firebase downloadedFile");
-    final private StorageReference storageReference = FirebaseStorage.getInstance().getReference();
 
     public AddFragment() {
         // Default constructor
@@ -141,7 +139,7 @@ public class AddFragment extends Fragment implements AdapterView.OnItemClickList
         requireContext().registerReceiver(onComplete, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
         // Icons and text for each tab
-        int[] tabIcons = {R.drawable.ic_close, R.drawable.ic_add, R.drawable.ic_complete};
+        int[] tabIcons = {R.drawable.ic_close, R.drawable.ic_add};
         TabLayout tabLayout = requireActivity().findViewById(R.id.tab_layout);
 
         // Iterate through tabs and set custom view
@@ -183,38 +181,6 @@ public class AddFragment extends Fragment implements AdapterView.OnItemClickList
     }
 
     /// Outside onViewCreated
-    private void uploadToFirebase(Uri uri){
-        final StorageReference imageReference = storageReference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
-
-        imageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                imageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                    @Override
-                    public void onSuccess(Uri uri) {
-                        DownloadModel downloadModel = new DownloadModel();
-                        downloadModel.setId(downloadModel.getId());
-                        downloadModel.setStatus(status);
-                        downloadModel.setTitle(extractFileName(file_name));
-                        downloadModel.setFile_size(file_size);
-                        downloadModel.setProgress(progress);
-                        downloadModel.setIs_paused(true);
-                        downloadModel.setDownloadId(downloadId);
-                        downloadModel.setFile_path(file_path);
-
-                        String key = databaseReference.push().getKey();
-                        databaseReference.child(key).setValue(downloadModel);
-                        Toast.makeText(requireActivity(), "Firebase uploaded", Toast.LENGTH_LONG).show();
-                    }
-                });
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(requireContext(), "Failed", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
     //Extract file type
     public static String extractFileName(String title) {
@@ -505,8 +471,6 @@ public class AddFragment extends Fragment implements AdapterView.OnItemClickList
                     if (localUriIndex >= 0) {
                         String downloaded_path = cursor.getString(localUriIndex);
                         downloadAdapter.setChangeItemFilePath(downloaded_path, id);
-                        // Upload the downloaded file to Firebase
-                        uploadToFirebase(Uri.parse(downloaded_path));
                     } else {
                         // Handle the case where the COLUMN_LOCAL_URI column doesn't exist
                     }

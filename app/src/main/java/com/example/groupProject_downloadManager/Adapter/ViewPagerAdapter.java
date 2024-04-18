@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.groupProject_downloadManager.Fragment.AddFragment;
-import com.example.groupProject_downloadManager.Fragment.StorageFirebaseFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private Context context;
@@ -27,8 +26,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return new AddFragment(tabTitles);
             case 1:
                 return new AddFragment(tabTitles);
-            case 2:
-                return new StorageFirebaseFragment();
             default:
                 return new AddFragment(tabTitles);
         }
@@ -36,6 +33,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 }
