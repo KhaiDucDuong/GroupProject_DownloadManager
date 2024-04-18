@@ -18,7 +18,7 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:padding="5dp"
-                android:src="@drawable/download_icon"
+                android:src="@drawable/downloadicon4"
                 android:layout_width="60dp"
                 android:layout_height="60dp" />
             <LinearLayout
@@ -26,7 +26,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="80dp">
+                android:layout_marginEnd="85dp">
                 <TextView
                     android:id="@+id/file_title"
                     android:layout_width="match_parent"
@@ -64,35 +64,25 @@
                         android:text="Pending"
                         android:gravity="end"
                         android:textStyle="bold"
-                        android:textColor="#ffffff"/>/>
+                        android:textColor="#ffffff"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="-70dp"
+                android:layout_marginLeft="-80dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
                 android:orientation="vertical" >
                 <Button
                     android:id="@+id/pause_resume"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_height="48dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#80BCBD"
                     android:padding="0dp"
                     android:text="PAUSE" />
-                <Button
-                    android:id="@+id/sharefile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:text="SHARE"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:padding="0dp"
-                    android:textStyle="bold"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp"
-                    app:rippleColor="#ffffff"
-                    app:strokeColor="#ffffff"
-                    android:backgroundTint="#ffffff" />
             </LinearLayout>
 
         </LinearLayout>

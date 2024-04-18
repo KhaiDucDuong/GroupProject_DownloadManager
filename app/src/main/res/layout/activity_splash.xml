@@ -4,22 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryDarkColor"
+    android:background="#C0EEF2"
     tools:context=".SplashActivity">
 
     <TextView
         android:id="@+id/txtAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold"
         android:drawablePadding="10dp"
-        android:drawableRight="@drawable/ic_file_download"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="#181823"
+        android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppName"
+        app:srcCompat="@drawable/ic_file_download"
+        android:layout_marginTop="10dp"
+        app:tint="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,4 +5,6 @@
     <color name="primaryColor">#9BCF53</color>
     <color name="primaryDarkColor">#416D19</color>
     <color name="blueItemGrid">#1679AB</color>
+    <color name="cherryRed">#F2613F</color>
+    <color name="warmBlue">#35A29F</color>
 </resources>
